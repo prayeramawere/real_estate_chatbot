@@ -27,7 +27,7 @@ export function useChat():useChatResponse{
     const chat = async (user_message:string)=>{
         setLoading(true)
         try {
-            const response = await fetch(`${API_URL}/api/chat`, {
+            const response = await fetch(`${API_URL}api/chat`, {
                 method:"POST",
                 headers:{
                     "Content-Type": "application/json"

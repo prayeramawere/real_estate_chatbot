@@ -2,7 +2,6 @@ import express, { json } from "express";
 import OpenAI from "openai";
 import dotenv from "dotenv";
 import { SYSTEM_PROMPT } from "../services/prompts.js";
-import { useState } from "react";
 
 dotenv.config();
 const router = express.Router();

@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 app.use(
   cors({
-    origin: "https://real-estate-chatbot-2-4ke8.onrender.com/",
+    origin: "https://real-estate-chatbot-2-4ke8.onrender.com",
   }),
 );
 

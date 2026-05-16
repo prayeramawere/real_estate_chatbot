@@ -10,8 +10,9 @@ const router = express.Router();
 const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
-const conversation = [];
+
 router.post("/", async (req, res) => {
+  const conversation = [];
   const { user_input } = req.body;
 
   conversation.push({ role: "user", content: user_input });

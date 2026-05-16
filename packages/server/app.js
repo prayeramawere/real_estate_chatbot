@@ -17,8 +17,6 @@ app.use(cors());
 
 app.use("/api/chat", chat);
 
-const spreadsheetId = "1W0ZLtpLNhFAfHJ87Bspk2vkmMrBrEC3YZ_GK0zwTM2c";
-
 app.listen(port, () => {
   console.log(`app running at http://localhost:${port}`);
 });
